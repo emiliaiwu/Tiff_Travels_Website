@@ -29,7 +29,7 @@ body {
 /* Header Style */
 header {
   position: fixed;
-  /* height: 70px; */
+  height: 75px;
   top: 0;
   right: 0;
   width: 100%;
@@ -54,6 +54,7 @@ header {
 /* Tiff Style */
 .logo span {
   display: inline-block;
+  font-size: 2.6rem;
   font-family: 'Dancing Script', cursive;
   letter-spacing: 1px;
 }
@@ -86,7 +87,7 @@ header {
   color: var(--BG-COLOR);
   z-index: 10001;
   cursor: pointer;
-  /* display: none; */
+  display: none;
 }
 
 /* Sticky Header */
