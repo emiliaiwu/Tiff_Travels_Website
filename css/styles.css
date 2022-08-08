@@ -23,13 +23,13 @@
 
 /* General Styles */
 body {
-  
+  background-color: aliceblue;
 }
 
 /* Header Style */
 header {
   position: fixed;
-  height: 70px;
+  /* height: 70px; */
   top: 0;
   right: 0;
   width: 100%;
@@ -37,8 +37,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 10%;
-  /* background-color: #6e54fa;  */
+  padding: 30px 3%;
   border-bottom: 1px #fff solid;
   background-color: transparent;
   transition: .40s ease;
@@ -85,7 +84,7 @@ header {
 #menu-icon {
   font-size: 35px;
   color: var(--BG-COLOR);
-  z-index: 100001;
+  z-index: 10001;
   cursor: pointer;
   /* display: none; */
 }
@@ -107,7 +106,7 @@ header .sticky {
 
 /* Section */
 section {
-  padding: 80px 18%;
+  padding: 80px 3%;
 }
 
 /* Home Section */
@@ -166,10 +165,11 @@ section {
  color: #000;
 }
 
-/* Section2 H2 TEXT */
+/* Section2 H2 Text */
 .text h2 {
   font-size: var(--H2-FONT);
   line-height: 1.3;
+  text-align: center;
 }
 
 .text h2 span {
@@ -183,7 +183,7 @@ section {
 /* Row Items Section2 */
 .row-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   grid-gap: 2rem;
   align-items: center;
   text-align: center;
@@ -192,7 +192,7 @@ section {
 
 /* Container Box */
 .container-box {
-  background: var(--BG-COLOR);
+  background: aliceblue;
   border: 1px solid #f0eded;
   padding: 50px 10px;
   border-radius: 4px;
@@ -206,7 +206,7 @@ section {
   height: 75px;
   width: 75px;
   padding: 5px;
-  background: #fff;
+  background-color: aliceblue;
   box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
   border-radius: 4px;
   margin-bottom: 25px;
@@ -230,3 +230,77 @@ section {
   transform: translateY(-3px);
 }  
 
+/* Section3 Title */
+.title {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.title h2 {
+  font-size: var(--H2-FONT);
+  line-height: 1.2;
+}
+
+.title h2 span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.6rem;
+}
+
+.package-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.thum {
+  position: relative;
+  transition: all .3s cubic-bezier(.445, .05, .55, .95);
+  will-change: filter;
+  cursor: pointer;
+}
+
+.thum img {
+  width: 100%;
+  height: auto;
+}
+
+.thum h3 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: right;
+  color: #fff;
+  top: 36px;
+  right: 40px;
+}
+
+.dest-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.stars i {
+  color: #2809db;
+  font-size: 20px;
+}
+
+.location h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.location p {
+  font-size: 15px;
+  color: var(--second-color);
+}
+
+.thum:hover {
+  filter: brightness(100%) hue-rotate(45deg);
+  transform: scale(1.04);
+}

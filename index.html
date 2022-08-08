@@ -18,26 +18,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<script>
-  const header = document.querySelector("header");
-
-  window.addEventListener ("scroll", function() {
-    header.classList.toggle ("sticky", window.scrollY > 0);
-  });
-
-  let menu = document.querySelector('#menu-icon');
-  let navbar = document.querySelector('.navbar');
-
-  menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('open');
-  };
-
-  window.onscroll = () => {
-    menu.classList.remove('bx-x');
-    navbar.classList.remove('open');
-  };
-</script>
 </head>
 <body>
   <!-- Header -->
@@ -104,7 +84,78 @@
 		</div>
 	</section>
  
+<!--Package section--->
+	<section class="package" id="package">
+		<div class="title">
+			<h2>Our Upcoming <br><span> Tour </span>Package</h2>
+		</div>
 
+		<div class="package-content">
+			<div class="box">
+				<div class="thum">
+					<img src="img/img1.png">
+					<h3>$499</h3>
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<h4>London</h4>
+						<p>4h - 5h</p>
+					</div>
+					<div class="stars">
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="thum">
+					<img src="img/img2.png">
+					<h3>$499</h3>
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<h4>New York</h4>
+						<p>4h - 5h</p>
+					</div>
+					<div class="stars">
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="thum">
+					<img src="img/img3.png">
+					<h3>$499</h3>
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<h4>Dubai</h4>
+						<p>4h - 5h</p>
+					</div>
+					<div class="stars">
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#"><i class='bx bxs-star'></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
 <!-- JS Link -->
   <script type="text/javascript" src"script.js"></script>
 </body>
