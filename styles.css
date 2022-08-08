@@ -1,0 +1,25 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  --BG-COLOR: #fff;
+  --TEXT-COLOR: #221314;
+  --SECOND-COLOR: #5a7184;
+  --MAIN-COLOR: #6e54fa;
+  --BIG-FONT: 6rem;
+  --H2-FONT: 3rem;
+  --P-FONT: 1.1rem;
+}
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
