@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Travel and Tour Booking Website">
+  <meta name="author" content="Tiffany Hadave">
   <title>Tiff Travels and Tours</title>
 
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -16,6 +18,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+  const header = document.querySelector("header");
+
+  window.addEventListener ("scroll", function() {
+    header.classList.toggle ("sticky", window.scrollY > 0);
+  });
+
+  let menu = document.querySelector('#menu-icon');
+  let navbar = document.querySelector('.navbar');
+
+  menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+  };
+
+  window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('open');
+  };
+</script>
 </head>
 <body>
   <!-- Header -->
@@ -40,9 +62,50 @@
 		</div>
   </section>
 
-  
+  <!--Container--->
+	<section class="container">
+		<div class="text">
+			<h2>Your  <span>Adventure </span>Awaits! <br> with Lots of Services!</h2>
+		</div>
+
+		<div class="row-items">
+			<div class="container-box">
+				<div class="container-img">
+					<img src="img/trip1.png">
+				</div>
+				<h4>Ship Cruises</h4>
+				<p>150 Properties</p>
+			</div>
+
+			<div class="container-box">
+				<div class="container-img">
+					<img src="img/trip2.png">
+				</div>
+				<h4>Food Tours</h4>
+				<p>150 Properties</p>
+			</div>
+
+			<div class="container-box">
+				<div class="container-img">
+					<img src="img/trip3.png">
+				</div>
+				<h4>Summer Rest</h4>
+				<p>150 Properties</p>
+			</div>
+
+			<div class="container-box">
+				<div class="container-img">
+					<img src="img/trip4.png">
+				</div>
+				<h4>Mountains Tours</h4>
+				<p>150 Properties</p>
+			</div>
+
+		</div>
+	</section>
+ 
 
 <!-- JS Link -->
-  <script type="text/javascript" src"javascript/script.js"></script>
+  <script type="text/javascript" src"script.js"></script>
 </body>
 </html>
